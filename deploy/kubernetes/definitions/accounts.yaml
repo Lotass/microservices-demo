@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: accounts
-        image: weaveworksdemos/accounts
+        image: weaveworksdemos/accounts:snapshot
         ports:
         - containerPort: 80
 ---
@@ -46,7 +46,7 @@ spec:
     spec:
       containers:
       - name: accounts-db
-        image: weaveworksdemos/accounts-db-test
+        image: weaveworksdemos/accounts-db-test:snapshot
 
         ports:
         - name: mongo
